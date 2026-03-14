@@ -1,0 +1,221 @@
+
+body{
+margin:0;
+font-family:Arial;
+background:#FFF5E1;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+align-items: center;
+padding: 10px 20px;
+background-color:#A8482A;
+height: 70px;
+color:white;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:20px;
+}
+
+.nav-links a{
+color:white;
+text-decoration:none;
+}
+
+.hero{
+background:url('../images/Restraunt background image.jpeg') center/cover;
+height:70vh;
+display:flex;
+
+justify-content:center;
+color:black;
+font-weight: bolder;
+
+}
+
+.btn{
+background:#FF8C00;
+padding:12px 24px;
+color:white;
+text-decoration:none;
+border-radius:5px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+padding:40px;
+}
+
+.card{
+background:white;
+text-align:center;
+box-shadow:0 4px 10px rgba(0,0,0,0.2);
+border-radius:10px;
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:;
+}
+
+footer{
+background:#8B0000;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+.menu{
+  text-align: center;
+  font-size: larger;
+}
+.culture{
+  
+  background-color:#4E0D12;
+  color: white;
+  text-align: center;
+  padding-top: 10px;
+}
+.btn{
+  margin-left: auto;
+  margin-right: 20px;
+  padding:10px 20px;
+  cursor:pointer;
+}
+
+.grid{
+display:flex;
+justify-content:center;
+gap:30px;
+margin-top:30px;
+}
+
+
+.card{
+width:350px;
+border-radius:15px;
+overflow:hidden;
+background:linear-gradient(135deg,#fff7e6,#ffe0b3);
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+text-align:center;
+transition:transform 0.3s;
+border:3px solid #b22222;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:contain;
+padding-top: 50px;
+background-color:#800000;
+}
+
+.card h3{
+padding:15px;
+color:#8B0000;
+font-weight:bolder;
+font-size:18px;
+}
+
+.menu-cards{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+  padding:20px;
+}
+.menu-cards .card{
+  border:1px solid #add;
+  border-radius:10px;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  text-align: center;
+}
+.menu-cards .card img{
+width:100%;
+height:200px;
+object-fit: cover;
+border-bottom:1px solid #add;
+overflow: hidden;
+padding-top:0px;
+}
+.menu-section{
+  text-align:center;
+  font-style: arial;
+}
+.logo{
+  font-family: sans-serif
+  text-align:center;
+  padding-left:400px;
+}
+.about{
+  text-align:center;
+  width:100%;
+  height:auto;
+  object-fit: contain;
+  display:block;
+  color:8B0000;
+  /* background-image: url('../images/jagannath-puri-temple.jpeg'); 
+  opacity:0.5;
+  filter:grayscale(50%) */
+    
+  }
+
+  .about-image{
+    width:100%;
+    max-width: 600px;
+    height: auto;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+    padding-top: 0px;
+  }
+  .aboutbtn{
+    display:inline-block;
+    padding: 10px 20px;
+    background-color:#800000;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    
+  }
+  .about-image-box{
+  position: relative;
+  display: inline-block;
+}
+
+.about-img{
+  width: 100%;
+}
+
+.aboutbtn{
+  position: absolute;
+  bottom: 120px;    
+  left: 60%;
+  transform: translateX(-50%);
+  background: #c0392b;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.contact{
+  text-align:center;
+}
+
+
+
+  
+
