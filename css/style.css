@@ -7,10 +7,10 @@ background:#FFF5E1;
 
 .navbar{
 display:flex;
-justify-content:space-between;
+justify-content:flex-start;
 align-items: center;
 padding: 10px 20px;
-background-color:#A8482A;
+background-color:#8B0000;
 height: 70px;
 color:white;
 }
@@ -19,11 +19,18 @@ color:white;
 list-style:none;
 display:flex;
 gap:20px;
+text-decoration: none;
+margin:0;
+padding:0;
 }
 
 .nav-links a{
 color:white;
 text-decoration:none;
+}
+
+.nav-links li{
+  margin-left:20px;
 }
 
 .hero{
@@ -81,14 +88,16 @@ padding:20px;
 }
 
 .grid{
-display:flex;
+display:grid;
 justify-content:center;
-gap:30px;
+
 margin-top:30px;
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:30px;
+grid-template-columns:repeat(auto-fit,minmax(250px,300px));
+gap:200px;
 padding:40px;
+justify-content: center;
+margin-left: 0;
 }
 
 
@@ -107,6 +116,7 @@ box-shadow:0 4px 10px rgba(0,0,0,0.2);
 border-radius:10px;
 overflow:hidden;
 margin-left: 15px;
+gap: 20px;
 }
 
 .card:hover{
@@ -154,10 +164,15 @@ padding-top:0px;
   text-align:center;
   font-style: arial;
 }
+.logo img{
+ height:80px;
+ width:auto;
+ display:block;
+ margin-right: 40px;
+ transition:transform 0.3s;
+}
 .logo{
-  font-family: sans-serif;
-  text-align:center;
-  padding-left:400px;
+  margin-right:auto;
 }
 .about{
   text-align:center;
