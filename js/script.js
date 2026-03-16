@@ -7,7 +7,15 @@ function openFood(name, desc, price, img, rating = 5){
     document.getElementById("popupPrice").innerText = price;
     document.getElementById("popupImg").src = img;
 
-    popup.style.display = "block";
+    popup.style.display = "flex";
+
+    //Disable scrolling
+    document.body.classList.add("popup-open", "true");
+    localStorage.setItem("popupFood", JSON.stringify({name,desc,price,img,rating}));
+
+    //Save popup state
+    localStorage.setItem("popupOpen","true")
+   
     setRating(rating);
 }
 
@@ -15,6 +23,15 @@ function openFood(name, desc, price, img, rating = 5){
 function closeFood(){
     const popup = document.getElementById("foodPopup");
     popup.style.display = "none";
+
+    //Enable scrolling again
+    document.body.classList.remove("popup-open");
+
+    //Remove saved state
+    localStorage.removeItem("popupOpen");
+    localStorage.removeItem("popupFood");
+
+    // document.documentElement.style.overflow="auto";
     // Reset dragging state
     isDragging = false;
     canDrag = false;
@@ -91,3 +108,24 @@ toast.classList.remove("show");
 },3000);
 
 }
+window.addEventListener("load", function(){
+
+    if(localStorage.getItem("popupOpen") === "true"){
+
+        const food = JSON.parse(localStorage.getItem("popupFood"));
+
+        if(food){
+            document.getElementById("popupTitle").innerText = food.name;
+            document.getElementById("popupDesc").innerText = food.desc;
+            document.getElementById("popupPrice").innerText = food.price;
+            document.getElementById("popupImg").src = food.img;
+
+            setRating(food.rating);
+        }
+
+        const popup = document.getElementById("foodPopup");
+        popup.style.display = "flex";
+        document.body.classList.add("popup-open");
+    }
+
+});
