@@ -33,4 +33,4 @@ This project was built to practice frontend web development and to showcase the 
 
 ## Author
 Swati Panda
-BCA Student | Aspiring Web Developer
+BCA Student |  Web Developer
