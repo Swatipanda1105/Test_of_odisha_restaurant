@@ -3,7 +3,7 @@
 A simple and responsive restaurant website showcasing the traditional flavours and culture of Odisha. This project highlights popular Odia dishes, cultural elements, and provides a visually appealing interface for users to explore the menu and story of the restaurant.
 
 ## Live Website
- https://swatipanda1105.github.io/Test_of_odisha_restaurant/
+  https://swatipanda1105.github.io/Test_of_odisha_restaurant/
 
 ## Features
 - Home page introducing the restaurant
